@@ -1,0 +1,24 @@
+                                                                                        CASE  KEYWORD
+CASE is a complex function that has two forms; the simple-when form and the searched-when form. In either form CASE returns a result, the value of which controls the path of subsequent processing.
+The CASE function must have at least one WHEN clause. The ELSE expression is optional. The default ELSE expression is NULL. A CASE expression is delimited by END. The test values do not have to be literal values.
+The searched-when form is similar, but has the additional flexibility of allowing a number of different values to be test.
+
+EXAMPLE:
+int a = 9;
+switch (a) 
+{
+ case 1: printf("I am One\n");
+         break;
+ case 2: printf("I am Two\n");
+         break;
+
+ case 9: printf("I am Nine\n");
+ case 0: printf("I am Zero\n");
+ default: printf("I am default\n");
+}
+
+Output –
+The output of this switch is :
+I am Nine
+I am Zero
+I am default

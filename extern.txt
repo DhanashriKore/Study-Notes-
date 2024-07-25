@@ -1,0 +1,6 @@
+                                                            EXTERN  KEYWORD
+The extern keyword is used to declare a variable or a function that is defined in another source file or library.
+When we declare a variable or function with the extern keyword, we are telling the compiler that the actual definition of that variable or function is located in another file, and that we are only providing a reference to it in our current source file. This allows us to share data or functions between multiple source files or libraries.
+
+Here is the syntax for declaring an extern variable:
+extern data_type variable_name;

@@ -1,0 +1,15 @@
+                                                                               CONST KEYWORD
+We use the const qualifier to declare a variable as constant. That means that we cannot change the value once the variable has been initialized. Using const has a very big benefit. For example, if you have a constant value of the value of PI, you wouldn't like any part of the program to modify that value. So you should declare that as a const.
+Objects declared with const-qualified types may be placed in read-only memory by the compiler, and if the address of a const object is never taken in a program, it may not be stored at all.
+
+Example
+
+#include<stdio.h>
+int main() {
+   const int x = 10;
+   x = 12;
+   return 0;
+}
+
+Output
+[Error] assignment of read-only variable 'x'

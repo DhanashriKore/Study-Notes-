@@ -1,0 +1,21 @@
+                                              DO  KEYWORD
+The do keyword is used as part of the do-while loop construct.
+The do-while loop is a type of loop that executes a block of code repeatedly until a certain condition is met. 
+
+The syntax for the do-while loop is as follows:
+do {
+    // block of code to be executed
+} while (condition);
+
+EXAMPLE:
+#include <stdio.h>
+int main() {
+    int i = 1;
+    do {
+        printf("%d ", i);
+        i++;
+    } while (i <= 10);
+    return 0;
+}
+
+output: 1 2 3 4 5 6 7 8 9 10

@@ -1,0 +1,23 @@
+-----------------------------------------------------------------------------                                    
+    IF KEYWORD
+-----------------------------------------------------------------------------
+In the C programming language, the "if" keyword is used to create a conditional statement.The "condition" within the parentheses is any expression that evaluates to a boolean value (either true or false). If the condition is true, the code within the curly braces will be executed. If the condition is false, the code within the curly braces will be skipped.
+
+ The syntax of the "if" statement is as follows:
+if (condition) {
+    // code to execute if condition is true
+}
+
+EXAMPLE:
+#include <stdio.h>
+int main() {
+    int num = 10;
+
+    if (num > 0) {
+        printf("%d is a positive number\n", num);
+    }
+
+    return 0;
+}
+OUTPUT:
+10 is a positive number

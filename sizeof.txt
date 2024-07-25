@@ -1,0 +1,29 @@
+                                                                           SIZEOF KEYWORD
+ The "sizeof" keyword is used to determine the size, in bytes, of a data type or a variable. In this program, we declare three variables of different data types, int, float, and char. We then use the "sizeof" operator to determine the size of each variable, and print out the results using the printf function.
+The "sizeof" operator can also be used to determine the size of arrays and structures, as well as to calculate the total size of an object in memory.
+
+SYNTAX:
+sizeof (data_type)
+or
+sizeof (variable_name)
+Here, data_type is the data type whose size we want to determine, and variable_name is the name of the variable whose size we want to determine.
+
+EXAMPLE:
+#include <stdio.h>
+
+int main() {
+    int x;
+    float y;
+    char z;
+
+    printf("Size of int: %ld bytes\n", sizeof(x));
+    printf("Size of float: %ld bytes\n", sizeof(y));
+    printf("Size of char: %ld bytes\n", sizeof(z));
+
+    return 0;
+}
+
+OUTPUT:
+Size of int: 4 bytes
+Size of float: 4 bytes
+Size of char: 1 byte

@@ -1,0 +1,43 @@
+                                                                                                 SWITCH  KEYWORD
+
+The switch keyword selects one of many code blocks to be executed. From the example above, it works like this: The switch expression is evaluated once. The value of the expression is compared with the values of each case .Switch case statements are a substitute for long if statements that compare a variable to several "integral" values ("integral" values are simply values that can be expressed as an integer, such as the value of a char). 
+
+SYNTAX:
+switch(expression) {
+   case constant-expression  :
+      statement(s);
+      break; /* optional */
+
+   default : /* Optional */
+   statement(s);
+}
+
+Example:
+#include <stdio.h>
+ int main ()
+ {
+   char grade = 'B';
+   switch(grade)
+ {
+      case 'A' :
+         printf("Excellent!\n" );
+         break;
+      case 'B' :
+      case 'C' :
+         printf("Well done\n" );
+         break;
+      case 'D' :
+         printf("You passed\n" );
+         break;
+      case 'F' :
+         printf("Better try again\n" );
+         break;
+      default :
+         printf("Invalid grade\n" );
+   }
+   printf("Your grade is  %c\n", grade );
+  return 0;
+}
+OUTPUT:
+Well done
+Your grade is B

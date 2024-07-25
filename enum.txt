@@ -1,0 +1,22 @@
+                                                                                              enum  keyword
+
+Enumeration or Enum in C is a special kind of data type defined by the user. It consists of constant integrals or integers that are given names by a user. The use of enum in C to name the integer values makes the entire program easy to learn, understand, and maintain by the same or even different programmer.
+An enum is defined by using the ‘enum’ keyword in C, and the use of a comma separates the constants within.
+
+SYNTAX:
+enum enum_name{int_const1, int_const2, int_const3, …. int_constN};
+
+
+EXAMPLE:
+#include <stdio.h>  
+ enum days{Sunday=1, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday};  
+int main()
+{
+    for(int i=Sunday;i<=Saturday;i++){
+        printf("%d, ",i);
+ }
+    return 0;
+}
+
+Output:
+1, 2, 3, 4, 5, 6,7

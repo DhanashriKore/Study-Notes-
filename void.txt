@@ -1,0 +1,20 @@
+                                                                                                               VOID  KEYWORD
+
+In C, if you don’t specify the parameters of a function, it can accept any number of parameters of any type. If you come from another programming language, this could be confusing at first. The way to define a function, that does not accept parameters in C is to use the keyword void as the only element in the parameters list. 
+When declaring functions, you will decide whether that function would be returning a value or not. If that function will not return a value, such as when the purpose of a function is to display some outputs on the screen, then "void" is to be placed at the leftmost part of the function header. When a return value is expected after the function execution, the data type of the return value is placed instead of "void".
+
+
+EXAMPLE:
+ void doit( const int & x )
+        {
+            x = 5; // ILLEGAL
+        }
+        int main()
+        {
+          int z = 27;
+          doit( z );
+          printf("z is now %d\n", z);
+
+          return 0;
+        }
+        

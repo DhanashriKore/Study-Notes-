@@ -1,0 +1,20 @@
+-----------------------------------------------------------------------------             
+                        SHORT  KEYWORD
+-----------------------------------------------------------------------------
+Short int in C is a data type in the C Programming language. Short int in C 
+occupies 2 bytes of memory. Number Range of short int is −32,767 to +32,767.Size of short data type is 2 bytes.
+Size of unsigned short data type is 2 bytes.
+
+EXAMPLE:
+#include <stdio.h>
+int main()
+{
+    short a;
+    unsigned short b;
+    printf("Size of short: %ld bytes \n",sizeof(a));
+    printf("Size of unsigned short: %ld bytes ",sizeof(b));
+}
+OUTPUT:
+Size of short: 2 bytes 
+Size of unsigned short: 2 bytes
+-------------------------------------------------------------------------

@@ -1,0 +1,17 @@
+                                                   VOLATILE  KEYWORD:
+The "volatile" keyword is used to indicate that a variable may be modified outside the scope of the current function, and should not be optimized by the compiler. This keyword tells the compiler that the variable's value may change unexpectedly, so it should not make any assumptions about its value or how it is used.The "volatile" keyword is commonly used when working with hardware devices or memory-mapped I/O, where a variable's value may change unexpectedly due to external factors. It can also be used to prevent the compiler from optimizing away code that accesses a variable, even if the variable's value is not used in the program's output.
+
+syntax:
+volatile data_type variable_name;
+
+EXAMPLE:
+#include <stdio.h>
+int main() {
+    int x = 5;
+    volatile int y = 10;
+    while (x == 5) {
+        printf("x = %d, y = %d\n", x, y);
+    }
+    return 0;
+}
+ //As x equals 5. However, because y is marked as volatile, the compiler will not optimize the loop, and will continue to read the value of y from memory on each iteration, even if its value has not changed.

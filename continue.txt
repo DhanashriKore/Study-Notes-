@@ -1,0 +1,27 @@
+                                                                                          CONTINUE  KEYWORD
+The continue statement is used inside loops. When a continue statement is encountered inside a loop, control jumps to the beginning of the loop for next iteration, skipping the execution of statements inside the body of loop for the current iteration.
+A continue statement can only appear within the body of an iterative statement, such as do, for, or while.
+The continue statement ends the processing of the action part of an iterative statement and moves control to the loop continuation portion of the statement. For example, if the iterative statement is a for statement, control moves to the third expression in the condition part of the statement, then to the second expression (the test) in the condition part of the statement.
+
+
+#include <stdio.h>
+#define  SIZE  5
+int main(void)
+{
+   int i;
+   static float rates[SIZE] = { 1.45, 0.05, 1.88, 2.00, 0.75 };
+   printf("Rates over 1.00\n");
+   for (i = 0; i < SIZE; i++)
+   {
+      if (rates[i] <= 1.00)  /*  skip rates <= 1.00  */
+         continue;
+      printf("rate = %.2f\n", rates[i]);
+   }
+  return(0);
+}
+
+output:
+Rates over 1.00
+rate = 1.45
+rate = 1.88
+rate = 2.00

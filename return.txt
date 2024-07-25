@@ -1,0 +1,24 @@
+                                                            RETURN  KEYWORD
+In C programming, the "return" keyword is used to return a value from a function.Here, expression is the value that we want to return from the function. The return type of the function must be compatible with the type of expression.
+The syntax for the "return" statement is as follows:
+return expression;
+
+
+Here's an example program that uses the "return" keyword:
+#include <stdio.h>
+int sum(int a, int b) {
+    int result = a + b;
+    return result;
+}
+
+int main() {
+    int x = 10;
+    int y = 20;
+    int s = sum(x, y);
+   printf("Sum of %d and %d is %d\n", x, y, s);
+  return 0;
+}
+OUTPUT:
+Sum of  x and y is
+30
+//When the return statement is executed inside the sum function, the value of result is returned to the calling function (main in this case), and is assigned to the variable s. This allows us to use the value computed by the sum function in other parts of the program.

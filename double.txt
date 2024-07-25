@@ -1,0 +1,24 @@
+                                                                          DOUBLE KEYWORD
+The double in C is a data type that is used to store high-precision floating-point data or numbers (up to 15 to 17 digits). It is used to store large values of decimal numbers.
+Values that are stored are double the size of data that can be stored in the float data type. Thus it is named a double data type.
+Any variable declared using the double data type in C is of the size 8 bytes (or 64 bits).
+
+Syntax for Declaration
+double varName;
+
+
+EXAMPLE:
+double temp1 = 98.4;
+double temp2;
+double temp3;
+temp3 = 97.88;
+
+printf("Value of temp1 = %lf\n",temp1);
+printf("Value of temp2 = %f\n",temp2);
+printf("Value of temp3 = %f\n",temp3);
+
+Output :
+
+Value of temp1 = 98.400000
+Value of temp2 = 0.000000
+Value of temp3 = 97.880000

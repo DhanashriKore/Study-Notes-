@@ -1,0 +1,37 @@
+                                                                                                    DEFAULT   KEYWORD
+ To specify the default case in the switch statement. As the default operator or literal to produce the default value of a type. As the default type constraint on a generic method override or explicit interface implementation.
+The default keyword the default block of code in a switch statement.
+The default keyword specifies some code to run if there is no case match in the switch.
+If the default keyword is used as the last statement in a switch block, it does not need a break.
+
+
+SYNTAX:
+switch( expression )
+{
+	case value-1:
+			Block-1;
+			Break;
+	case value-n:
+			Block-n;
+			Break;
+	default:
+			Block-1;
+			Break;
+}Statement-x;
+
+EXAMPLE:
+int day = 4;
+switch (day) {
+  case 6:
+    System.out.println("Today is Saturday");
+    break;
+  case 7:
+    System.out.println("Today is Sunday");
+    break;
+  default:
+    System.out.println("Looking forward to the Weekend");
+}
+
+
+Output:
+ "Looking forward to the Weekend"

@@ -1,0 +1,28 @@
+                                                   UNION KEYWORD
+the "union" keyword is used to define a user-defined data type that can hold multiple different data types at the same memory location. A union is similar to a structure, but it only stores one value at a time, regardless of its type.Unions can be useful when working with data that can have different types, but only one value is needed at a time. They can also be used to save memory, as the memory allocated for the union is only as large as the largest member.
+
+ Syntax
+union union_name {
+    data_type1 member_name1;
+    data_type2 member_name2;
+    ...
+};
+
+EXAMPLE:
+#include <stdio.h>
+
+union my_union {
+    int x;
+    float y;
+    char c;
+};
+int main() {
+    union my_union u;
+    u.x = 10;
+    printf("Value of u.x: %d\n", u.x);
+    u.y = 3.14;
+    printf("Value of u.y: %f\n", u.y);
+    u.c = 'A';
+    printf("Value of u.c: %c\n", u.c);
+    return 0;
+}

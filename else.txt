@@ -1,0 +1,21 @@
+                                                                                                                  ELSE  KEYWORD
+Use if to specify a block of code to be executed, if a specified condition is true. Use else to specify a block of code to be executed, if the same condition is false. Use else if to specify a new condition to test, if the first condition is false.
+If the Boolean expression evaluates to true, then the if block will be executed, otherwise, the else block will be executed. C programming language assumes any non-zero and non-null values as true, and if it is either zero or null, then it is assumed as false value.
+
+Syntax
+if (condition) {
+  // block of code to be executed if the condition is true
+} else {
+  // block of code to be executed if the condition is false
+}
+
+EXAMPLE:
+int time = 20;
+if (time < 18) {
+  printf("Good day.");
+} else {
+  printf("Good evening.");
+}
+
+ Outputs:
+ "Good evening."

@@ -1,0 +1,24 @@
+                                                                STATIC  KEYWORD:
+
+The "static" keyword is used to create variables and functions that have a static or non-changing lifetime, scope, and value.
+When used with variables, the "static" keyword causes the variable to be initialized only once and to retain its value between function calls. The variable is allocated statically, which means that it is created and initialized when the program starts and remains in memory throughout the lifetime of the program.
+
+SYNTAX:
+static data_type variable_name = initial_value;
+
+EXAMPLE:
+#include <stdio.h>
+void increment() {
+    static int count = 0;
+    count++;
+    printf("Count = %d\n", count);
+}
+int main() {
+    increment();
+    increment();
+    increment();
+    return 0;
+}
+OUTPUT:
+3
+//In this program, we define a function increment that uses a static integer variable count to keep track of how many times the function has been called. When the increment function is called, the value of count is incremented and printed out. The value of count is retained between function calls because it is declared as static.

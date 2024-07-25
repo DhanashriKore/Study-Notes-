@@ -1,0 +1,25 @@
+                                                      GOTO  KEYWORD
+The "goto" keyword in C programming is used to transfer control of the program to a labeled statement elsewhere in the program. It is generally considered to be a dangerous construct and its use is discouraged, as it can make the code difficult to read and maintain.
+
+Here is the syntax for the "goto" statement inC:
+goto label;
+
+EXAMPLE:
+#include <stdio.h>
+int main() {
+    int num = 10;
+
+    if (num > 0) {
+        goto positive;
+    }
+   printf("%d is not a positive number\n", num);
+   return 0;
+positive:
+    printf("%d is a positive number\n", num);
+  return 0;
+}
+OUTPUT:
+10 is a positive number
+//This is because the "if" statement is true, so the program jumps to the labeled statement positive: and executes the code within the curly braces.
+
+

@@ -1,0 +1,25 @@
+                                                                                                     SIGNED  KEYWORD
+Signed keyword is used for those variables which can take positive as well as negative values. unsigned keyword is used for those variables which can take only values which are zero or positive i.e., without - (negative sign). We can use signed and unsigned keywords with only 'int' and 'char' data types.
+It is not necessary to give signed keyword to any variable because all the variables are signed by default.
+
+EXAMPLE:
+#include <stdio.h>
+int main() 
+{
+  short int a = 12345;
+  signed int b = -34;
+    
+  unsigned int c = 12;
+  long int d = 99998L;
+    
+  printf("Integer value with an short int data: %hd", a);
+  printf("\nInteger value with an signed int data: %d", b);
+  printf("\nInteger value with an unsigned int data: %u", c);
+  printf("\nInteger value with an long int data: %ld", d);
+  return 0;
+}
+Output
+Integer value with an short int data: 12345
+Integer value with an signed int data: -34
+Integer value with an unsigned int data: 12
+Integer value with an long int data: 99998

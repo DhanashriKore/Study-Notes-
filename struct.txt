@@ -1,0 +1,32 @@
+                                                                          STRUCT KEYWORD
+Struct is the keyword used to define structure in C.
+The structure in C is a user-defined datatype, that is used to store different data type variables under one user-defined data type.
+The Structure variables are used to access the members of the structure.
+The size of the structure variable will be the same as the sum of the size of different data types members of the structure.
+To initialize the variables, we need to use the structure variable name then a '.' dot and after that the name of the member that we want to initialize.
+
+Syntax :
+struct structure_name
+{
+    data_type member1;
+    data_type member2;
+};
+
+EXAMPLE:
+#include<stdio.h>
+struct demo_structure
+{
+   int a, b;
+   char c;
+};
+int main(){
+   struct demo_structure var;
+   var.a=7;
+   var.b=9;
+   var.c='A';
+  printf("%d %d %c", var.a, var.b,var.c);
+   return 0;
+}
+
+OUTPUT:
+7 9 A

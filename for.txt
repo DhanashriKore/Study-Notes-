@@ -1,0 +1,26 @@
+                                                                                                          FOR  KEYWORD
+A for loop is a repetition control structure that allows you to efficiently write a loop that needs to execute a specific number of times.
+How does for loop work in C?
+The init step is executed first, and only once. This step allows you to declare and initialize any loop control variables. ...Next, the condition is evaluated. ...
+After the body of the 'for' loop executes, the flow of control jumps back up to the increment statement. .
+The condition is now evaluated again.
+
+Syntax
+for ( init; condition; increment ) {
+   statement(s);
+}
+
+EXAMPLE:
+#include <stdio.h>
+ int main () 
+{
+   int a;
+   for( a = 10; a < 20; a = a + 1 )
+{
+      printf("%d\t", a);
+  }
+  return 0;
+}
+
+OUTPUT:
+10 11 12 13 14 15 16 17 18 19

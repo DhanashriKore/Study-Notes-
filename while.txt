@@ -1,0 +1,23 @@
+                                                                             WHILE  KEYWORD
+ The "while" keyword is used to create a loop that executes as long as a certain condition is true. The "while" keyword is commonly used to implement iteration in C programming. It's important to make sure that the condition in the "while" loop eventually becomes false, or else the loop will continue indefinitely, resulting in an infinite loop.
+
+SYNTAX:
+while (condition) {
+    // code to be executed repeatedly
+}
+
+EXAMPLE:
+#include <stdio.h>
+
+int main() {
+    int i = 0;
+
+    while (i < 10) {
+        printf("%d ", i);
+        i++;
+    }
+
+    return 0;
+}
+OUTPUT:
+123456789

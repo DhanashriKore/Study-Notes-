@@ -1,0 +1,23 @@
+                                                                                        UNSIGNED KEYWORD
+The unsigned keyword is a data type specifier, that makes a variable only represent non-negative integer numbers (positive numbers and zero). It can be applied only to the char , short , int and long types.
+This is implemented for fetching values from the address of a variable having an unsigned decimal integer stored in memory. An unsigned Integer means the variable can hold only a positive value. This format specifier is used within the printf() function for printing the unsigned integer variables.
+
+Syntax:
+
+printf(“%u”, variable_name);
+or
+printf(“%u”, value);
+
+EXAMPLE:
+#include <stdio.h>
+int main()
+{
+    // Print value 20 using %u
+    printf("%u\n", 20);
+    return 0;
+}
+
+
+Output:
+
+20

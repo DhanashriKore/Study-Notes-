@@ -1,0 +1,8 @@
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                 BREAK  KEYWORD
+The break is a keyword in C which is used to bring the program control out of the loop. The break statement is used inside loops or switch statement. The break statement breaks the loop one by one, i.e., in the case of nested loops, it breaks the inner loop first and then proceeds to outer loops.
+You can place a break command only in the body of a looping command or in the body of a switch command. The break keyword must be lowercase and cannot be abbreviated.
+
+Syntax of break in C
+break;

@@ -1,0 +1,26 @@
+                                                        REGISTER  KEYWORD
+In C programming, the "register" keyword is used to request that the compiler store a variable in a CPU register rather than in memory. This can lead to faster access times for the variable, since registers are typically much faster to access than memory.
+
+The syntax for declaring a variable as a register in C is as follows:
+register int variable_name;
+Here, variable_name is the name of the variable that we want to store in a register. It is important to note that the "register" keyword is only a request to the compiler, and it is up to the compiler to decide whether to store the variable in a register or in memory.
+
+EXAMPLE:
+#include <stdio.h>
+int main() {
+    register int i;
+    int sum = 0;
+    for (i = 0; i < 10000; i++) {
+        sum += i;
+    }
+    printf("Sum = %d\n", sum);
+    return 0;
+}
+OUTPUT:
+//In this program, we declare an integer variable i as a register variable. We then use a for loop to iterate from 0 to 9999, adding each value of i to a running total stored in the integer variable sum. Finally, we print out the value of sum.
+
+Using the "register" keyword in this example is not likely to provide a significant performance improvement, since the compiler is likely to optimize the code by storing the variable in a register anyway. In general, the use of the "register" keyword is not recommended unless there is a specific need for the variable to be stored in a register.
+
+
+
+

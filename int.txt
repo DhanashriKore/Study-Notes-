@@ -1,0 +1,23 @@
+-----------------------------------------------------------------------------
+                                     INT  KEYWORD
+------------------------------------------------------------------------------
+An integer type variable can store zero, positive, and negative values without any decimal.  By default, the value assigned to an integer variable is considered positive if it is unsigned.
+The size of an int variable is fixed and determined by the C implementation you use. The C Standard dictates that an int must have a range of at least -32768 to +32767.The range of the int type on a particular C implementation can be obtained via the INT_MAX and INT_MIN variables defined in the header <limits.h>
+
+EXAMPLE:
+#include <limits.h>
+#include <stdio.h>
+ int main()
+{
+    printf("minimum int value = %d\n"
+           "maximum int value = %d\n"
+           "size of int in bytes = %zu\n"
+           "size of int in bits = %zu",
+           INT_MIN, INT_MAX, sizeof(int),
+           sizeof(int) * CHAR_BIT);
+}
+OUTPUT:
+minimum int value = -2147483648    maximum int value = 2147483647
+size of int in bytes = 4              size of int in bits = 32
+
+-----------------------------------------------------------------------------

@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+		                             AUTO KEYWORD  
+-------------------------------------------------------------------------------                                                             
+
+The auto keyword in C language is a type specifier used to declare automatic
+ variables inside a function. 
+An automatic variable is a local variable that is automatically created and
+ destroyed when the function is entered and exited, respectively.
+Here is the syntax for using the auto keyword to declare an automatic variable in C:
+auto data_type variable_name;
+
+------------------------------------------------------------------------------
